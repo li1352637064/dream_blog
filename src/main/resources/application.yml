@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  address: localhost
+  undertow:
+    threads:
+      io: 2
+      worker: 2
+    buffer-size: 1024
+    direct-buffers: true
+
+spring:
+  datasource:
+    url: jdbc:sqlite::resource:db/blog.db
+    driver-class-name: org.sqlite.JDBC
