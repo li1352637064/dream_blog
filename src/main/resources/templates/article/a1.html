@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>文章标题</title>
     <link href="https://cdn.bootcdn.net/ajax/libs/picocss/1.5.6/pico.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/github-markdown-css/5.1.0/github-markdown-light.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/common.css">
     <link rel="stylesheet" href="/static/css/article.css">
 </head>
@@ -68,11 +69,12 @@
 </div>
 <main id="container">
 
-    <div class="content">
+    <article class="markdown-body content">
         <h1 id="欢迎使用-markdown在线编辑器">欢迎使用 Markdown在线编辑器</h1>
         <p><strong>Markdown是一种轻量级的「标记语言」</strong></p>
         <blockquote>
-            <p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面，Markdown文件的后缀名便是“.md”</p>
+            <p>
+                Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面，Markdown文件的后缀名便是“.md”</p>
         </blockquote>
         <h2 id="mdeditor的功能列表演示">MdEditor的功能列表演示</h2>
         <h1 id="标题h1">标题H1</h1>
@@ -82,24 +84,26 @@
         <h5 id="标题h5">标题H5</h5>
         <h6 id="标题h5-1">标题H5</h6>
         <h3 id="字符效果和横线等">字符效果和横线等</h3>
-        <hr />
+        <hr/>
         <p>~~删除线~~ <s>删除线（开启识别HTML标签时）</s></p>
-        <p><em>斜体字</em>      <em>斜体字</em></p>
-        <p><strong>粗体</strong>  <strong>粗体</strong></p>
+        <p><em>斜体字</em> <em>斜体字</em></p>
+        <p><strong>粗体</strong> <strong>粗体</strong></p>
         <p><em><strong>粗斜体</strong></em> <em><strong>粗斜体</strong></em></p>
         <p>上标：X<sub>2</sub>，下标：O<sup>2</sup></p>
         <p><strong>缩写(同HTML的abbr标签)</strong></p>
         <blockquote>
             <p>即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启</p>
         </blockquote>
-        <p>The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
+        <p>The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr
+                title="World Wide Web Consortium">W3C</abbr>.</p>
         <h3 id="引用-blockquotes">引用 Blockquotes</h3>
         <blockquote>
             <p>引用文本 Blockquotes</p>
         </blockquote>
         <p>引用的行内混合 Blockquotes</p>
         <blockquote>
-            <p>引用：如果想要插入空白换行<code>即&lt;br /&gt;标签</code>，在插入处先键入两个以上的空格然后回车即可，<a href="https://www.mdeditor.com/" target="_blank">普通链接</a>。</p>
+            <p>引用：如果想要插入空白换行<code>即&lt;br /&gt;标签</code>，在插入处先键入两个以上的空格然后回车即可，<a href="https://www.mdeditor.com/"
+                                                                                 target="_blank">普通链接</a>。</p>
         </blockquote>
         <h3 id="锚点与链接-links">锚点与链接 Links</h3>
         <p><a href="https://www.mdeditor.com/" target="_blank">普通链接</a>
@@ -109,7 +113,7 @@
             [anchor-id]: https://www.mdeditor.com/
             <a href="mailto:test.test@gmail.com" target="_blank">mailto:test.test@gmail.com</a>
             GFM a-tail link @pandao
-            邮箱地址自动链接 test.test@gmail.com  www@vip.qq.com</p>
+            邮箱地址自动链接 test.test@gmail.com www@vip.qq.com</p>
         <blockquote>
             <p>@pandao</p>
         </blockquote>
@@ -142,11 +146,11 @@
 </code></pre>
         <h3 id="图片-images">图片 Images</h3>
         <p>图片加链接 (Image + Link)：</p>
-        <p><img src="https://www.baidu.com/img/bd_logo1.png" alt="" title="markdown" /></p>
+        <p><img src="https://www.baidu.com/img/bd_logo1.png" alt="" title="markdown"/></p>
         <blockquote>
             <p>Follow your heart.</p>
         </blockquote>
-        <hr />
+        <hr/>
         <h3 id="列表-lists">列表 Lists</h3>
         <h4 id="无序列表减号unordered-lists--">无序列表（减号）Unordered Lists (-)</h4>
         <ul>
@@ -184,7 +188,7 @@
             <li>第二行</li>
             <li>第三行</li>
         </ol>
-        <hr />
+        <hr/>
         <h3 id="绘制表格-tables">绘制表格 Tables</h3>
         <table class="ui celled table">
             <thead>
@@ -313,7 +317,8 @@
                 <td align="right">$1</td>
             </tr>
             </tbody>
-        </table></div>
+        </table>
+    </article>
 
 </main>
 </body>
