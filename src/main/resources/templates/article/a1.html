@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>文章标题</title>
@@ -67,6 +67,253 @@
     </div>
 </div>
 <main id="container">
+
+    <div class="content">
+        <h1 id="欢迎使用-markdown在线编辑器">欢迎使用 Markdown在线编辑器</h1>
+        <p><strong>Markdown是一种轻量级的「标记语言」</strong></p>
+        <blockquote>
+            <p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面，Markdown文件的后缀名便是“.md”</p>
+        </blockquote>
+        <h2 id="mdeditor的功能列表演示">MdEditor的功能列表演示</h2>
+        <h1 id="标题h1">标题H1</h1>
+        <h2 id="标题h2">标题H2</h2>
+        <h3 id="标题h3">标题H3</h3>
+        <h4 id="标题h4">标题H4</h4>
+        <h5 id="标题h5">标题H5</h5>
+        <h6 id="标题h5-1">标题H5</h6>
+        <h3 id="字符效果和横线等">字符效果和横线等</h3>
+        <hr />
+        <p>~~删除线~~ <s>删除线（开启识别HTML标签时）</s></p>
+        <p><em>斜体字</em>      <em>斜体字</em></p>
+        <p><strong>粗体</strong>  <strong>粗体</strong></p>
+        <p><em><strong>粗斜体</strong></em> <em><strong>粗斜体</strong></em></p>
+        <p>上标：X<sub>2</sub>，下标：O<sup>2</sup></p>
+        <p><strong>缩写(同HTML的abbr标签)</strong></p>
+        <blockquote>
+            <p>即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启</p>
+        </blockquote>
+        <p>The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
+        <h3 id="引用-blockquotes">引用 Blockquotes</h3>
+        <blockquote>
+            <p>引用文本 Blockquotes</p>
+        </blockquote>
+        <p>引用的行内混合 Blockquotes</p>
+        <blockquote>
+            <p>引用：如果想要插入空白换行<code>即&lt;br /&gt;标签</code>，在插入处先键入两个以上的空格然后回车即可，<a href="https://www.mdeditor.com/" target="_blank">普通链接</a>。</p>
+        </blockquote>
+        <h3 id="锚点与链接-links">锚点与链接 Links</h3>
+        <p><a href="https://www.mdeditor.com/" target="_blank">普通链接</a>
+            <a href="https://www.mdeditor.com/" title="普通链接带标题" target="_blank">普通链接带标题</a>
+            直接链接：<a href="https://www.mdeditor.com" target="_blank">https://www.mdeditor.com</a>
+            [锚点链接][anchor-id]
+            [anchor-id]: https://www.mdeditor.com/
+            <a href="mailto:test.test@gmail.com" target="_blank">mailto:test.test@gmail.com</a>
+            GFM a-tail link @pandao
+            邮箱地址自动链接 test.test@gmail.com  www@vip.qq.com</p>
+        <blockquote>
+            <p>@pandao</p>
+        </blockquote>
+        <h3 id="多语言代码高亮-codes">多语言代码高亮 Codes</h3>
+        <h4 id="行内代码-inline-code">行内代码 Inline code</h4>
+        <p>执行命令：<code>npm install marked</code></p>
+        <h4 id="js代码">JS代码</h4>
+        <pre><code class="language-javascript">function test() {
+	console.log(&quot;Hello world!&quot;);
+}
+</code></pre>
+        <h4 id="html-代码-html-codes">HTML 代码 HTML codes</h4>
+        <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;mate charest=&quot;utf-8&quot; /&gt;
+        &lt;meta name=&quot;keywords&quot; content=&quot;Editor.md, Markdown, Editor&quot; /&gt;
+        &lt;title&gt;Hello world!&lt;/title&gt;
+        &lt;style type=&quot;text/css&quot;&gt;
+            body{font-size:14px;color:#444;font-family: &quot;Microsoft Yahei&quot;, Tahoma, &quot;Hiragino Sans GB&quot;, Arial;background:#fff;}
+            ul{list-style: none;}
+            img{border:none;vertical-align: middle;}
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 class=&quot;text-xxl&quot;&gt;Hello world!&lt;/h1&gt;
+        &lt;p class=&quot;text-green&quot;&gt;Plain text&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        <h3 id="图片-images">图片 Images</h3>
+        <p>图片加链接 (Image + Link)：</p>
+        <p><img src="https://www.baidu.com/img/bd_logo1.png" alt="" title="markdown" /></p>
+        <blockquote>
+            <p>Follow your heart.</p>
+        </blockquote>
+        <hr />
+        <h3 id="列表-lists">列表 Lists</h3>
+        <h4 id="无序列表减号unordered-lists--">无序列表（减号）Unordered Lists (-)</h4>
+        <ul>
+            <li>列表一</li>
+            <li>列表二</li>
+            <li>列表三</li>
+        </ul>
+        <h4 id="无序列表星号unordered-lists-">无序列表（星号）Unordered Lists (*)</h4>
+        <ul>
+            <li>列表一</li>
+            <li>列表二</li>
+            <li>列表三</li>
+        </ul>
+        <h4 id="无序列表加号和嵌套unordered-lists-">无序列表（加号和嵌套）Unordered Lists (+)</h4>
+        <ul>
+            <li>列表一</li>
+            <li>列表二
+                <ul>
+                    <li>列表二-1</li>
+                    <li>列表二-2</li>
+                    <li>列表二-3</li>
+                </ul>
+            </li>
+            <li>列表三
+                <ul>
+                    <li>列表一</li>
+                    <li>列表二</li>
+                    <li>列表三</li>
+                </ul>
+            </li>
+        </ul>
+        <h4 id="有序列表-ordered-lists--">有序列表 Ordered Lists (-)</h4>
+        <ol>
+            <li>第一行</li>
+            <li>第二行</li>
+            <li>第三行</li>
+        </ol>
+        <hr />
+        <h3 id="绘制表格-tables">绘制表格 Tables</h3>
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th>项目</th>
+                <th align="right">价格</th>
+                <th align="center">数量</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>计算机</td>
+                <td align="right">$1600</td>
+                <td align="center">5</td>
+            </tr>
+            <tr>
+                <td>手机</td>
+                <td align="right">$12</td>
+                <td align="center">12</td>
+            </tr>
+            <tr>
+                <td>管线</td>
+                <td align="right">$1</td>
+                <td align="center">234</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th>First Header</th>
+                <th>Second Header</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Content Cell</td>
+                <td>Content Cell</td>
+            </tr>
+            <tr>
+                <td>Content Cell</td>
+                <td>Content Cell</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th>First Header</th>
+                <th>Second Header</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Content Cell</td>
+                <td>Content Cell</td>
+            </tr>
+            <tr>
+                <td>Content Cell</td>
+                <td>Content Cell</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th>Function name</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><code>help()</code></td>
+                <td>Display the help window.</td>
+            </tr>
+            <tr>
+                <td><code>destroy()</code></td>
+                <td><strong>Destroy your computer!</strong></td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th align="left">Left-Aligned</th>
+                <th align="center">Center Aligned</th>
+                <th align="right">Right Aligned</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td align="left">col 3 is</td>
+                <td align="center">some wordy text</td>
+                <td align="right">$1600</td>
+            </tr>
+            <tr>
+                <td align="left">col 2 is</td>
+                <td align="center">centered</td>
+                <td align="right">$12</td>
+            </tr>
+            <tr>
+                <td align="left">zebra stripes</td>
+                <td align="center">are neat</td>
+                <td align="right">$1</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th>Item</th>
+                <th align="right">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Computer</td>
+                <td align="right">$1600</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td align="right">$12</td>
+            </tr>
+            <tr>
+                <td>Pipe</td>
+                <td align="right">$1</td>
+            </tr>
+            </tbody>
+        </table></div>
 
 </main>
 </body>

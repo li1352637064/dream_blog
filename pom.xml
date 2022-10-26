@@ -15,6 +15,7 @@
     <description>dream_blog</description>
     <properties>
         <java.version>17</java.version>
+        <commonmark.version>0.20.0</commonmark.version>
         <repackage.classifier/>
     </properties>
     <dependencies>
@@ -73,6 +74,21 @@
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity-engine-core</artifactId>
             <version>2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark</artifactId>
+            <version>${commonmark.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-gfm-tables</artifactId>
+            <version>${commonmark.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-heading-anchor</artifactId>
+            <version>${commonmark.version}</version>
         </dependency>
 
     </dependencies>
