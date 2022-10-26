@@ -27,6 +27,8 @@
     padding: 40px 10%;
 }
 
+
+/*首页*/
 #article-container {
     display: flex;
     flex-direction: column;
@@ -93,7 +95,6 @@
     background: var(--background-color);
 }
 
-
 #article-container > .article > .intro-wrapper > .title {
     margin-bottom: 10px;
 }
@@ -129,8 +130,99 @@
     margin-right: 6px;
 }
 
-
 #article-container > .article > .intro-wrapper > .brief {
     font-size: 16px;
 }
 
+
+/*标签墙*/
+#years-container,
+#months-container,
+#classify-container,
+#tag-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: fit-content;
+    padding: 40px;
+    margin: 0 auto;
+    background: var(--background-color);
+
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 10px HSLA(0, 0%, 0%, 0.2);
+}
+
+#tag-container .tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+#tag-container .tags .tag {
+    width: fit-content;
+    height: fit-content;
+    padding: 14px;
+    font-size: 16px;
+}
+
+
+/*分类*/
+#classify-container .classifies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+#classify-container .classifies .classify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: fit-content;
+    padding: 6px 14px;
+    font-size: 16px;
+}
+
+
+/*时间轴*/
+#time-axis-container .years,
+#time-axis-container .months {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+#time-axis-container .years .year,
+#time-axis-container .months .month {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: fit-content;
+    padding: 6px 14px;
+    font-size: 16px;
+}
+
+
+#months-container {
+    margin-top: 40px;
+    width: 54%;
+}
